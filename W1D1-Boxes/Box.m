@@ -10,11 +10,14 @@
 
 @implementation Box
 
--(Box *)initBoxVolume:(float)height width:(float)width length:(float)length
+- (instancetype)initWithlength:(float)length andWidth:(float)width andHeight:(float)height;
 {
-    self.height = height;
-    self.width = width;
-    self.length = length;
+    if (self = [super init])
+    {
+        self.height = height;
+        self.width = width;
+        self.length = length;
+    }
     return self;
 }
 

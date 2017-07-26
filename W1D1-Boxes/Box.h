@@ -14,7 +14,7 @@
 @property (nonatomic, assign) float width;
 @property (nonatomic, assign) float length;
 
-- (Box *)initBoxVolume:(float)height width:(float) width length:(float) length;
+- (instancetype)initWithlength:(float)length andWidth:(float)width andHeight:(float)height;
 - (float)volume;
 - (float)calculateInsideBox:(Box *)anotherBox;
 
